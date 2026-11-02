@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - Salamah Obeidat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="contactBody">
+
+    <!-- Header -->
+    <header>
+        <h1>Contact Me</h1>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="contact me.html">Contact Me</a>
+        </div>
+    </header>
+
+
+    <!-- Contact Page -->
+    <div id="contactPage">
+
+        <!-- Contact Image -->
+        <img src="contact image.png" alt="Contact Image" id="contactImage">
+
+
+        <!-- Contact Information and Form -->
+        <div id="contactContent">
+
+            <h1>Contact Me</h1>
+
+            <div id="contactDetails">
+
+                <!-- Contact Form -->
+                <form id="contactForm">
+
+                    <input type="text" id="name" placeholder="Full Name">
+
+                    <input type="email" id="email" placeholder="E-mail">
+
+                    <input type="text" id="country" placeholder="Country">
+
+                    <textarea id="comments" placeholder="Message" rows="2"></textarea>
+
+                    <button type="submit">Contact Me</button>
+
+                </form>
+
+
+                <!-- Contact Information -->
+                <div id="myInformation">
+
+                    <h3>
+                        <span class="contactIcon">&#9993;</span>
+                        Contact
+                    </h3>
+
+                    <p>smobeidat221@cit.just.edu.jo</p>
+
+                    <br>
+
+                    <h3>
+                        <span class="contactIcon">&#128205;</span>
+                        Based in
+                    </h3>
+
+                    <p>Jordan, Irbid</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 Salamah Obeidat</p>
+    </footer>
+
+
+    <!-- JavaScript Form Validation -->
+    <script>
+
+        document.getElementById("contactForm").onsubmit = function(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let country = document.getElementById("country").value.trim();
+            let comments = document.getElementById("comments").value.trim();
+
+            if (name == "" || email == "" || country == "" || comments == "") {
+
+                alert("Please fill in all fields!");
+
+            } else {
+
+                alert("Your form has been submitted successfully!");
+
+                document.getElementById("contactForm").reset();
+
+            }
+
+        };
+
+    </script>
+
+</body>
+</html>

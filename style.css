@@ -1,0 +1,207 @@
+
+/* General Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 20px;
+}
+
+
+/* Header */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/* Main Titles */
+h2 {
+    color: #1e3a5f;
+}
+
+
+/* Home Page Sections */
+#profile, #skills, #technologies, #future, #email {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+/* Profile Image */
+#profile img {
+    border-radius: 10px;
+}
+
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+
+/* Technologies Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Contact Page */
+#contactBody {
+    background-color: #f3eee8;
+}
+
+
+/* Contact Layout */
+#contactPage {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 40px;
+    background-color: #f3eee8;
+}
+
+
+/* Contact Image */
+#contactImage {
+    width: 35%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 0 80px 0 80px;
+}
+
+
+/* Contact Content */
+#contactContent {
+    flex: 1;
+    background-color: #f3eee8;
+}
+
+#contactContent h1 {
+    color: #08083f;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+
+/* Contact Form and Information */
+#contactDetails {
+    display: flex;
+    gap: 60px;
+    background-color: #f3eee8;
+}
+
+#contactForm {
+    width: 60%;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid #08083f;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+#contactForm button {
+    width: 100%;
+    background-color: #08083f;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+/* Contact Information */
+#myInformation {
+    background-color: #f3eee8;
+    padding: 0;
+    margin: 0;
+}
+
+#myInformation h3 {
+    color: #08083f;
+}
+
+#myInformation p {
+    color: #333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 800px) {
+
+    #contactPage {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #contactImage {
+        width: 100%;
+        height: 300px;
+    }
+
+    #contactDetails {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
+}
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #ff4d4d;
+}
